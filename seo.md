@@ -200,8 +200,6 @@ Use this for:
 
 ## 9. Cluster: Students & Early‑Stage Adults
 
-_(Опционально, но полезно для блог‑контента и органики.)_
-
 ### Keyword ideas
 
 - money app for students
