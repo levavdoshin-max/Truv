@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - main
-      - feat/docs-pages
     paths:
       - 'docs/**'
       - '.github/workflows/deploy-docs.yml'
@@ -22,6 +21,7 @@ concurrency:
 
 jobs:
   deploy:
+    if: github.ref == 'refs/heads/main'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
