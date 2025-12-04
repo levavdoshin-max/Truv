@@ -1,3 +1,9 @@
+> **TL;DR for leadership**
+> - myTruv = AI‑powered, no‑hustle money companion.
+> - Promise = one calm score, one scroll, always worth opening, no shame.
+> - Not a budgeting app. Works on top of bank apps & cards, especially with messy/irregular income.
+> - Brand tone = light, kind, validating; always gives either reassurance or a small useful action.
+
 <!-- overview.md -->
 
 # myTruv — Brand System Overview
@@ -7,7 +13,7 @@ Start here to understand how all brand docs fit together and how to use them.
 
 ---
 
-## 1. Purpose
+## 1. Purpose 🎯
 
 This file exists to:
 
@@ -22,7 +28,7 @@ If you’re unsure where to look or how to talk about myTruv, you start here.
 
 ---
 
-## 2. How to Use This System
+## 2. How to Use This System 🧭
 
 Think of this folder as a stack:
 
@@ -64,9 +70,18 @@ Whenever you’re stuck:
 
 ---
 
-## 3. Table of Contents
+## 3. Table of Contents 📚
 
 Quick map of all core files with why they exist.
+
+| File          | What it covers                     | Use it when...                    |
+| ------------- | ----------------------------------- | --------------------------------- |
+| brand.md      | Essence, values, feelings          | Big decisions, creative briefs    |
+| positioning.md| Market framing & differentiation    | Pitches, strategy, investor decks |
+| messaging.md  | Phrases, narratives, examples      | Writing copy                      |
+| personas.md   | Who we talk to                     | Targeting, tone                   |
+| seo.md        | Keywords, content angles, IA       | Blog & landing pages              |
+
 
 ### 3.1 Brand
 
@@ -147,7 +162,7 @@ Quick map of all core files with why they exist.
 
 ---
 
-## 4. Operating Rules
+## 4. Operating Rules ⚙️
 
 ### 4.1 Source of Truth
 
