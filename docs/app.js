@@ -183,18 +183,22 @@ function buildSectionMenu() {
     const parent = groups.find((g) => g.id === parentId);
     if (!subContainer || !parent) return;
 
-    subContainer.innerHTML =
-      parent.children.length === 0
-        ? `<span class="note">No subsections</span>`
-        : parent.children
-            .map(
-              (child) => `
-          <button class="item level-3" data-target="${child.id}">
-            ${child.text}
-          </button>
-        `
-            )
-            .join("");
+    if (parent.children.length === 0) {
+      subContainer.classList.add("hidden");
+      subContainer.innerHTML = "";
+      return;
+    }
+
+    subContainer.classList.remove("hidden");
+    subContainer.innerHTML = parent.children
+      .map(
+        (child) => `
+        <button class="item level-3" data-target="${child.id}">
+          ${child.text}
+        </button>
+      `
+      )
+      .join("");
 
     const buttonsLevel3 = Array.from(subContainer.querySelectorAll(".item.level-3"));
     buttonsLevel3.forEach((btn) => {

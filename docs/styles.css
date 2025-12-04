@@ -285,6 +285,16 @@ button {
   background: #ffffff;
 }
 
+.section-menu .items.level3.hidden {
+  display: none;
+}
+
+.section-menu .items.level3 .empty-note {
+  font-size: 13px;
+  color: #6b7280;
+  padding: 4px 2px;
+}
+
 .section-menu .item {
   border: 1px solid #e2e8f0;
   background: #fff;
