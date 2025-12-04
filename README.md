@@ -1,4 +1,4 @@
-<!-- README.md / overview.md -->
+<!-- overview.md / README.md -->
 
 # myTruv — Brand System Overview
 
@@ -10,8 +10,6 @@
 
 This is the **entry point** for the myTruv brand system — a **map of maps**.  
 Start here to understand how all brand docs fit together and how to use them.
-
-Research (Paint Points): https://app.lyssna.com/tests/dlhfyzcl2w1c/results/cho7i0h9lmbl
 
 ---
 
@@ -56,7 +54,7 @@ Use it like this:
 
 4. **Use `personas.md` when you need to choose a target or tone**  
    - For campaigns, features, emails, flows.
-   - It helps you pick **who you’re talking to** (Exhausted Power User, Emotional iOS Spender, Self‑Employed with chaotic income, students, high earners, etc.) and adjust nuance.
+   - It helps you pick **who you’re talking to** (Exhausted Power User, Emotional iOS Spender, Self‑Employed with chaotic income, etc.) and adjust nuance.
 
 5. **Use `seo.md` for search & content**  
    - For blog topics, landing pages, and keyword strategy.
@@ -76,13 +74,13 @@ Whenever you’re stuck:
 
 Quick map of all core files with why they exist.
 
-| File           | What it covers                     | Use it when…                       |
-| -------------- | ----------------------------------- | ---------------------------------- |
-| `brand.md`     | Essence, values, feelings          | Big decisions, creative briefs     |
-| `positioning.md` | Market framing & differentiation | Pitches, strategy, investor decks  |
-| `messaging.md` | Phrases, narratives, examples      | Writing copy                       |
-| `personas.md`  | Who we talk to                     | Targeting, tone                    |
-| `seo.md`       | Keywords, content angles, IA       | Blog & landing pages               |
+| File            | What it covers                     | Use it when…                       |
+| --------------- | ----------------------------------- | ---------------------------------- |
+| `brand.md`      | Essence, values, feelings          | Big decisions, creative briefs     |
+| `positioning.md`| Market framing & differentiation    | Pitches, strategy, investor decks  |
+| `messaging.md`  | Phrases, narratives, examples      | Writing copy                       |
+| `personas.md`   | Who we talk to                     | Targeting, tone                    |
+| `seo.md`        | Keywords, content angles, IA       | Blog & landing pages               |
 
 ### 3.1 Brand
 
@@ -203,7 +201,30 @@ Quick map of all core files with why they exist.
   - Make sure updates are consistent across:
     - `brand.md` ↔ `positioning.md` ↔ `messaging.md`.
 
-### 4.3 Versioning
+### 4.3 Ownership
+
+*(Fill in concrete names as you see fit.)*
+
+- **Primary owner (brand system):**
+  - Role: Brand / Marketing Lead (or Founder until that exists).
+  - Responsible for:
+    - Keeping the system coherent.
+    - Approving major changes.
+    - Ensuring product & marketing use the same story.
+
+- **Co‑owners:**
+  - **Product Lead / PM:**  
+    Ensures positioning & personas reflect actual product and roadmap.
+  - **Design Lead:**  
+    Ensures UX & visual design align with brand essence and tone.
+  - **Content / Growth / SEO Lead:**  
+    Uses and maintains `messaging.md` and `seo.md` in practice.
+
+- **Everyone else:**
+  - Can **suggest changes** (via PRs/comments).
+  - Should **consult these docs** before creating user‑facing work.
+
+### 4.4 Versioning
 
 To keep changes transparent and reversible:
 
