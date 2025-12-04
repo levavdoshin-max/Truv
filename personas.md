@@ -1,278 +1,262 @@
 <!-- personas.md -->
 
+# myTruv — Personas (No‑Hustle AI Companion)
 
-# myTruv — Personas (No‑Hustle Autopilot & One‑Score)
+## 0. Purpose
 
+myTruv is **not** only for one demographic.  
+Different people meet us with different pains.
 
-> Same core personas as before — but explicitly tuned to prefer  
-> **“one score + one scroll + no hustle + shame‑free autopilot”**  
-> over daily quests, heavy gamification, or manual budgeting.
+This file:
 
+- describes the **main audience patterns** from research,
+- shows **what resonates** and **what to avoid** for each,
+- helps you pick **who you’re talking to** when writing, designing or prioritising.
 
----
-
-## Persona 1 — “Exhausted Power User”
-
-**Snapshot**
-
-- Age: 30–40  
-- Income: $50–90k household  
-- Status: Full‑time or self‑employed  
-- Tech: Advanced, 6+ hours online/day  
-- Devices: Android + Windows skew  
-- Tools today: bank app, spreadsheets, 1–2 budgeting apps (Mint / YNAB / Monarch / etc.)
-
-**Money situation**
-
-- Knows *exactly* how to set up budgets, categories, spreadsheets.
-- Has tried multiple “systems” and can talk in detail about them.
-- Still feels like money is **never fully under control**:
-  - income or expenses fluctuate,
-  - feels like constant micromanagement,
-  - gets tired and drops the system every few months.
-
-**Primary pains**
-
-- “I know what to do, I just don’t have the mental energy to do it non‑stop.”
-- Tool fatigue: everything turns into **more dashboards and more work**.
-- Feels guilty when they stop maintaining the system for a few weeks.
-- Hates that every app assumes they want to become their own CFO.
-
-**Why no‑hustle + one score fits**
-
-- They **do not want another system to maintain**.
-- They want:
-  - to connect accounts once,
-  - see a **single wellbeing score**,
-  - scroll once to understand what changed and what to do.
-- They appreciate that the score **moves slowly** and reflects their system, not every small decision.
-
-**What resonates**
-
-- “You don’t need to maintain myTruv — it maintains itself.”
-- “Not another dashboard. One score, one scroll, 1–3 meaningful actions.”
-- “Your Truv Score moves gradually, based on patterns — not random daily noise.”
-- “We sit on top of your spreadsheets and bank apps and turn them into one clear signal.”
-
-**What to avoid**
-
-- Heavy “build your perfect budget” narratives.
-- Daily streak pressure (“log in every day or you lose your progress”).
-- Anything that looks like yet another complex control panel.
-
+Use it for:
+- campaign briefs,
+- product decisions (“who is this feature for?”),
+- tone & emphasis choices.
 
 ---
 
-## Persona 2 — “Emotional iOS Spender”
+## 1. Shared Traits Across Personas
 
-**Snapshot**
+Regardless of age / income, most people who will love myTruv:
 
-- Age: late 20s to mid‑30s  
-- Income: $40–80k household  
-- Status: Full‑time or full‑time + side gigs  
-- Tech: Intermediate → comfortable with iOS, hates complex UIs  
-- Devices: iPhone + Mac  
-- Tools today: bank app, maybe a budgeting app, sometimes a simple spreadsheet
+- feel that money is **mentally heavy** (chaos, guilt, fatigue),
+- have already tried **something**:
+  - bank apps, spreadsheets, budgeting tools,
+- don’t want another system they have to maintain,
+- want to know:
+  - “Am I okay?”
+  - “What changed?”
+  - “What’s one realistic thing I can do?”
 
-**Money situation**
+Brand promise stays the same for everyone:
 
-- Does okay most of the time, but:
-  - spends more when stressed or sad,
-  - has cyclical “treat yourself” months,
-  - sometimes avoids looking at accounts for days/weeks.
-- Feels **guilt and shame** around money:
-  - “I know I should be better with this.”
-  - “I don’t want an app yelling at me.”
+> **AI‑powered, no‑hustle, always‑worth‑opening money companion.**
 
-**Primary pains**
-
-- Rings and streaks quickly become:
-  - “I broke the streak → I failed → I’ll avoid the app.”
-- Budgeting apps feel like a constant judgment:
-  - red bars,
-  - “over budget” warnings,
-  - lots of numbers without emotional safety.
-- Feels overwhelmed by the idea of being “perfect” with money.
-
-**Why no‑shame + no performance game matters**
-
-- A single, calm score plus gentle explanations feels **emotionally safe**.
-- They want an app that **explains what happened** without making them feel like a failure.
-- They like **simple, visually clean, mobile‑first** experiences with human language.
-
-**What resonates**
-
-- “No red ‘failure’ screens. No ‘you blew it again’ copy.”
-- “Most days, your score will say: ‘You’re okay.’ When it drops, we’ll explain why in plain language.”
-- “Looking at your Spain trip or a ‘treat yourself’ month shouldn’t feel like punishment. It’s just information.”
-- “You don’t have to engage every day. myTruv is here when you’re ready to check in.”
-
-**What to avoid**
-
-- Guilt‑driven messaging (“fix your bad habits”, “stop wasting money”).
-- Aggressive notifications.
-- Daily gamified rings as the *main* mechanic (they can exist, but as gentle, optional celebration).
-
+Personas below change **which pain we press** and **which examples we use**, not the core identity.
 
 ---
 
-## Persona 3 — “Working Middle America”
+## 2. Persona 1 — “Exhausted Power User”
 
-**Snapshot**
+### Snapshot
 
-- Age: 30–40  
-- Income: $45–85k household  
-- Status: Full‑time employee (maybe with a partner & kids)  
-- Tech: Intermediate → comfortable with mainstream apps, not a power user  
-- Devices: iOS or Android; often uses laptop/desktop at work  
-- Tools today: bank app, a basic spreadsheet, maybe notes on phone
+- Age: ~28–45  
+- Income: mid to high  
+- Status: full‑time or self‑employed  
+- Tech: advanced, 6+ hours online/day  
+- Tools today: bank apps, spreadsheets, maybe YNAB / Monarch / Copilot etc.
 
-**Money situation**
+### Relationship with money
 
-- Life is full: work, commuting, family, errands.
-- Knows they **should** pay more attention, but there’s limited bandwidth.
-- Wants:
-  - “Am I okay overall?”
-  - “Are my balances trending up or down?”
-  - “Can I afford this big thing without being stupid?”
+- Understands budgeting deeply: can build complex Excel and category rules.
+- Has tried “doing everything right” multiple times.
+- Still feels like money is **never quite under control**, especially with fluctuating months.
+- Feels **tool fatigue** and low‑grade guilt when they stop maintaining systems.
 
-**Primary pains**
+### Main pains
 
-- No time or desire to run a complex “money project”.
-- Confused by multi‑tab budgeting apps.
-- Feels mild, continuous background worry: “I think I’m fine, but I’m not sure.”
+- “I know what I should do, but I don’t have the energy to do it forever.”
+- Every new app wants them to **do more work**.
+- Feels like a part‑time CFO for their own life.
 
-**Why one scroll works**
+### What resonates
 
-- They want an experience that matches how they use their phone:
-  - 30 seconds in line,
-  - quick check at lunch,
-  - scroll once before bed.
-- A simple mobile view with:
-  - **Truv Score**,
-  - current **balances & cushions**,
-  - **2–3 short insights** in plain English  
-  is exactly right.
+- “Not another dashboard. myTruv sits on top of the tools you already have.”
+- “You don’t maintain myTruv — it maintains itself.”
+- “One calm score, one scroll, and 1–3 moves that actually matter.”
+- “We respect the work you’ve already done. We turn it into autopilot instead of asking for more.”
 
-**What resonates**
+### What to avoid
 
-- “Check your money in the time it takes to scroll a single screen.”
-- “Your score and trends are explained in plain English, not finance jargon.”
-- “You don’t need to care about categories unless you want to.”
-- “After work, you don’t have to become your own CFO — just check your score and move on.”
-
-**What to avoid**
-
-- Long setups, questionnaires, complex onboarding.
-- Requiring them to religiously log in daily.
-- Making them feel like they “must” understand advanced concepts to use the app.
-
+- “Build your perfect budget.”
+- “Track everything.”
+- Any onboarding that feels like setting up another complex system.
 
 ---
 
-## Persona 4 — “Self‑Employed with Chaotic Income”
+## 3. Persona 2 — “Emotional iOS Spender”
 
-**Snapshot**
+### Snapshot
 
-- Age: 30–40  
-- Income: 40–100k, but extremely lumpy  
-- Status: Self‑employed / freelancer / contractor / small business  
-- Tech: Advanced, heavy‑online, uses multiple tools  
-- Devices: Mix of Android/iOS + laptop (often Windows)  
-- Tools today: bank app, spreadsheets, invoicing + accounting tools, sometimes budgeting apps
+- Age: ~22–40  
+- Income: varied (from students/early career to mid income)  
+- Status: mostly full‑time, some side‑hustles  
+- Tech: intermediate, iPhone‑centric, likes clean apps  
+- Tools today: bank app, maybe one budgeting app, sometimes a simple sheet
 
-**Money situation**
+### Relationship with money
 
-- Income is **lumpy and unpredictable**:
-  - one strong month, one slow,
-  - big invoices followed by dry spells.
+- Spends more when stressed / sad / bored.
+- Has waves of “treat yourself” months.
+- Sometimes **avoids** opening banking apps for days/weeks.
+- Feels **guilt and embarrassment** about money.
+
+### Main pains
+
+- Gamified apps (rings, streaks) quickly become:
+  - “I failed again → I’ll stop opening it.”
+- Red charts and “overspent” warnings hurt and trigger avoidance.
+- Needs emotional **safety** more than data.
+
+### What resonates
+
+- “No red failure screens. No ‘you blew it again’ copy.”
+- “Most days, your score will say: ‘You’re okay.’ When it drops, we explain why in human language.”
+- “Looking at your Vegas weekend, Cancun trip or ‘treat yourself’ month shouldn’t feel like punishment. It’s just information.”
+- “You can be gone for weeks and still be welcome when you come back.”
+
+### What to avoid
+
+- “Fix your bad habits”, “stop wasting money”.
+- Copy that sounds like a disappointed parent or teacher.
+- Hard streak mechanics as the *main* motivator.
+
+---
+
+## 4. Persona 3 — “Working Middle America”
+
+### Snapshot
+
+- Age: ~30–50  
+- Income: roughly middle‑income household  
+- Status: full‑time, often with partner/kids  
+- Tech: intermediate; uses common apps but not a “power user”  
+- Tools today: bank app, basic spreadsheet, maybe notes
+
+### Relationship with money
+
+- Life is full: work, commute, kids, errands.
+- Money is a **background worry**, not a hobby.
+- Feels like “I think we’re fine, but I’m not 100% sure.”
+
+### Main pains
+
+- No energy for complex budgeting rituals.
+- Multi‑tab finance apps feel too heavy.
+- Wants a **quick check‑in**, not a weekend project.
+
+### What resonates
+
+- “Check your whole money picture in the time it takes to scroll one screen.”
+- “Plain English explanations, no finance jargon.”
+- “One score that says whether you’re okay. If something needs attention, we tell you where and why.”
+- Examples around:
+  - Disney trip,
+  - new car payment,
+  - rising groceries / daycare.
+
+### What to avoid
+
+- Long questionnaires and heavy onboarding flows.
+- Requiring daily engagement.
+- Making them feel “behind” because they don’t optimise everything.
+
+---
+
+## 5. Persona 4 — “Self‑Employed with Chaotic Income”
+
+### Snapshot
+
+- Age: ~25–50  
+- Income: from modest to high, but **lumpy**  
+- Status: self‑employed / contractors / freelancers / small business owners  
+- Tech: advanced; heavy online; uses tools for work (invoicing, CRMs, etc.)  
+- Tools today: bank apps, spreadsheets, invoicing/accounting software, sometimes budgeting apps
+
+### Relationship with money
+
+- Revenue is: big invoice → quiet month → another spike.
 - Has to juggle:
   - taxes,
   - irregular bills,
-  - occasional big business expenses,
-  - personal life on top.
-- Traditional monthly budgets feel like a lie:
-  - “Every month is different, so the budget is always wrong.”
+  - personal + business mixed together.
+- Monthly budgets feel like lies.
 
-**Primary pains**
+### Main pains
 
-- Constant low‑grade anxiety: “Will this month work out?”
-- Doesn’t have a stable way to answer: “Can I safely take this month off / do this trip / invest in this equipment?”
-- Daily or weekly rings would be **emotionally brutal**, because their numbers swing.
+- Constant underlying anxiety: “Can I afford a slow month? A trip? A new laptop?”
+- Hard to see whether they’re **actually progressing** or just surviving.
+- Daily or weekly gamification is emotionally brutal: numbers swing a lot.
 
-**Why long‑horizon, stable score is key**
+### What resonates
 
-- They need a **steady “system health” signal** over months:
-  - “Is my overall system holding up?”
-  - “Am I building cushion or burning it?”
-- They want **event‑level stories**:
-  - how a big invoice,
-  - a tax payment,
-  - an equipment purchase  
-  change the picture.
+- “myTruv smooths your chaos into one wellbeing score and a few trend lines.”
+- “You see if your system is holding up over months, not just days.”
+- “We show exactly how big events (invoices, tax payments, trips) affected your runway.”
+- “We help you build and track buffers for taxes, emergencies and slow periods.”
 
-**What resonates**
+### What to avoid
 
-- “myTruv smooths your chaos into one wellbeing score and a few key trend lines.”
-- “We show how your big swings (invoices, tax payments, trips) affect your long‑term picture — without panic.”
-- “You don’t need a perfect monthly budget to see if you’re still on stable ground.”
-- “We quietly build and track buffers for taxes, emergencies and slow months.”
-
-**What to avoid**
-
-- Messaging that assumes a neat monthly paycheck.
+- Messaging that assumes a neat monthly salary.
 - “Just stick to your monthly budget.”
-- Any implication that they’re failing because their cashflow is non‑standard.
+- Anything that suggests they’re failing because their income is irregular.
 
+---
+
+## 6. Persona 5 — “Anxiety‑Heavy ‘Some College’ Pattern”
+
+_Not a full demographic persona, but a critical emotional pattern that overlaps multiple groups._
+
+### Snapshot
+
+- Education: “Some college”, stopped before degree  
+- Status: mixed (full‑time, part‑time, unstable work)  
+- Tech: mixed, but comfortable with mainstream apps  
+- Emotion: feel they “should already have it together”, but don’t.
+
+### Relationship with money
+
+- Money = **shame + chaos**.
+- Often avoids checking balances.
+- Feels like everyone else is secretly ahead.
+
+### Main pains
+
+- Financial education feels like **homework they’re already behind on**.
+- Hyper‑sensitive to blame; very quick to internalise:
+  - “I’m just bad with money.”
+- Traditional budgeting content is intimidating.
+
+### What resonates
+
+- “You were never really taught how to do this. That’s okay.”
+- “Your score describes your situation, not your worth.”
+- “You don’t have to open the app every day. When you do, you’ll get clarity, not a lecture.”
+- Emphasis on:
+  - validation,
+  - small safe steps,
+  - ‘system’ language instead of ‘you’re failing’ language.
+
+### What to avoid
+
+- Any tone that could be read as “you should know this by now”.
+- Heavy jargon and complex flows.
+- Demanding long‑term commitment up front.
 
 ---
 
-## Anxiety‑Heavy “Some College” Pattern
+## 7. Using Personas in Practice
 
-> Not a full persona, but a critical emotional pattern that overlaps with several personas.
+When you work on a feature, page or campaign:
 
-**Snapshot**
+1. **Pick one primary persona**  
+   - “Who are we mainly helping here?”
 
-- Education: “Some college”  
-- Feel_score: lowest group in the research  
-- Status: mix of full‑time, part‑time, or unstable work  
-- Tech: Mixed, but generally comfortable with mainstream apps
+2. **Choose their key pain**  
+   - Exhausted Power User → tool fatigue & complexity.  
+   - Emotional iOS Spender → shame & avoidance.  
+   - Self‑Employed → chaos & unpredictability.  
+   - etc.
 
-**Money situation**
+3. **Frame the outcome in their language**  
+   - Use examples they recognise (Vegas weekend, Disney trip, car repair, medical bill, side‑hustle month).
 
-- Feels like they “should already have it together” but don’t.
-- Experiences money as:
-  - chaos,
-  - shame,
-  - frequent small crises.
-- Often avoids looking at accounts; terrified of what they might see.
+4. **Keep the global promise constant**  
+   - AI‑powered, no‑hustle, shame‑free, always worth opening.
 
-**Primary pains**
-
-- Deep sense of “I’m failing at adulting.”
-- Educational content or “learn to budget” messaging feels like homework they’re already behind on.
-- Hyper‑sensitive to any hint of blame.
-
-**Why no‑hustle & shame‑free is essential**
-
-- A daily fitness‑style tracker for money would **worsen** their self‑image.
-- They need:
-  - a **friendly, low‑pressure** check‑in,
-  - “here’s where you actually are”,
-  - and “it’s not the end of the world”.
-
-**What resonates**
-
-- “You were never really taught how to do money. That’s okay.”
-- “Your score explains your situation — not your worth as a person.”
-- “You don’t have to engage every day. We’ll be here whenever you’re ready for clarity.”
-- “We can’t change rent or healthcare, but we can help you be less exposed to them.”
-
-**What to avoid**
-
-- Any copy that sounds like a scolding parent or teacher.
-- Heavy financial jargon.
-- Complex onboarding or “courses” as a requirement to get value.
-
-
----
+If something works only for one persona but feels off‑brand for others, it probably shouldn’t be in the core product.
