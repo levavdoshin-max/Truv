@@ -373,7 +373,7 @@ button {
   display: flex;
   gap: 12px;
   margin-top: 10px;
-  align-items: flex-end;
+  align-items: flex-start;
   flex-wrap: wrap;
 }
 
@@ -391,7 +391,7 @@ button {
 }
 
 .ai-question textarea {
-  min-height: 70px;
+  min-height: 62px;
   padding: 12px;
   border-radius: 12px;
   border: 1px solid #dfe4ef;
@@ -476,7 +476,6 @@ button {
   color: #1f4cd7;
   font-size: 20px;
   line-height: 1;
-  transform: translateY(-2px);
 }
 
 .sr-only {
@@ -493,7 +492,7 @@ button {
 
 .ai-submit {
   min-width: 88px;
-  align-self: flex-end;
+  align-self: flex-start;
   display: inline-flex;
   align-items: center;
   justify-content: center;
