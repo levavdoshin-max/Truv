@@ -1,7 +1,8 @@
 import { marked } from "https://cdn.jsdelivr.net/npm/marked@12.0.2/lib/marked.esm.js";
 
-// Load Markdown from same-origin files on the deployed site to avoid cross-origin/CDN issues
-const rawBase = ".";
+// Load Markdown from GitHub raw (source of truth) with cache-bust, fallback to same-origin if needed.
+const rawBase = "https://raw.githubusercontent.com/levavdoshin-max/Truv-Lev-Tests/main";
+const localBase = ".";
 
 const docs = [
   {
@@ -322,10 +323,14 @@ async function loadDoc(docId, opts = {}) {
 
   setLoading("Loading the latest Markdown…");
   const cacheBust = opts.cacheBust ? `?t=${Date.now()}` : "";
-  const localUrl = `${rawBase}/${doc.file}${cacheBust}`;
+  const remoteUrl = `${rawBase}/${doc.file}${cacheBust}`;
+  const localUrl = `${localBase}/${doc.file}${cacheBust}`;
 
   try {
-    const response = await fetch(localUrl);
+    let response = await fetch(remoteUrl);
+    if (!response.ok) {
+      response = await fetch(localUrl);
+    }
     if (!response.ok) throw new Error(`Fetch error ${response.status}`);
 
     const markdown = await response.text();
