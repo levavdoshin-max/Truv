@@ -330,15 +330,9 @@ button {
 .content-header {
   display: flex;
   align-items: flex-start;
-  justify-content: space-between;
+  justify-content: flex-start;
   gap: 12px;
   flex-wrap: wrap;
-}
-
-.content-actions {
-  display: flex;
-  gap: 8px;
-  align-items: center;
 }
 
 .content {
@@ -346,7 +340,7 @@ button {
 }
 
 .ai-box {
-  margin-bottom: 16px;
+  margin: 10px 0 20px;
   padding: 18px;
 }
 

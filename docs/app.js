@@ -80,7 +80,6 @@ const docList = document.getElementById("doc-list");
 const docRoot = document.getElementById("doc-root");
 const docTitle = document.getElementById("doc-title");
 const docDesc = document.getElementById("doc-desc");
-const refreshButton = document.getElementById("refresh-doc");
 const heroButtons = document.querySelectorAll("[data-doc]");
 const sectionMenu = document.getElementById("section-menu");
 const aiKeyInput = document.getElementById("ai-key");
@@ -436,10 +435,6 @@ async function askAi() {
     aiSubmitButton.textContent = "Ask";
   }
 }
-
-refreshButton.addEventListener("click", () => {
-  loadDoc(activeDoc.id, { cacheBust: true });
-});
 
 heroButtons.forEach((button) => {
   button.addEventListener("click", () => {
