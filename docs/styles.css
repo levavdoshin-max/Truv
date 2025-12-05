@@ -576,8 +576,8 @@ button {
   position: fixed;
   right: 24px;
   bottom: 32px;
-  width: 44px;
-  height: 44px;
+  width: 68px;
+  height: 68px;
   border: 1px solid rgba(223, 230, 243, 0.9);
   border-radius: 50%;
   background: radial-gradient(circle at 30% 30%, rgba(44, 100, 227, 0.16), rgba(255, 255, 255, 0.95));
@@ -589,6 +589,11 @@ button {
   pointer-events: none;
   transition: opacity 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
   z-index: 20;
+  font-size: 18px;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .back-to-top.visible {

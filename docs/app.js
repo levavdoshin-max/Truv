@@ -98,9 +98,8 @@ function renderDocList() {
     const button = document.createElement("button");
     button.className = `doc-card${doc.id === activeDoc.id ? " active" : ""}`;
     button.dataset.docId = doc.id;
-    const emoji = docEmojis[doc.id] || "🔹";
     button.innerHTML = `
-      <p class="title">${emoji} ${doc.title}</p>
+      <p class="title">${stripEmojis(doc.title)}</p>
       <p class="desc">${doc.description}</p>
       <span class="badge">${doc.badge}</span>
     `;
@@ -172,11 +171,17 @@ function normalizeHeading(text) {
   const withoutEmoji = text.replace(/[\p{Emoji}\p{Extended_Pictographic}]/gu, "");
   const stripped = withoutEmoji
     .replace(/^[\s\.\-–—•·]+/, "")
-    .replace(/^\d+\.?\s*/, "")
+    .replace(/^[0-9]+\s*[.)-]?\s*/, "")
+    .trimStart()
+    .replace(/^[\.\-–—•·\s]+/, "")
     .trim();
   const finalText = stripped || "Section";
   const emojiPart = emojiMatch.join(" ");
   return emojiPart ? `${finalText} ${emojiPart}` : `${finalText} 🔹`;
+}
+
+function stripEmojis(text) {
+  return text.replace(/[\p{Emoji}\p{Extended_Pictographic}]/gu, "").trim();
 }
 
 function buildSectionMenu() {
