@@ -56,7 +56,7 @@ const docEmojis = {
   brand: "✨",
   positioning: "🧭",
   messaging: "✍️",
-  personas: "🧑‍🤝‍🧑",
+  personas: "",
   seo: "🔍",
   overview: "📑",
 };
@@ -143,8 +143,9 @@ function renderDocList() {
 }
 
 function setHeader(doc) {
-  const emoji = docEmojis[doc.id] || "🔹";
-  docTitle.textContent = `${emoji} ${doc.title}`;
+  const baseTitle = stripEmojis(doc.title);
+  const emoji = docEmojis[doc.id];
+  docTitle.textContent = emoji ? `${emoji} ${baseTitle}` : baseTitle;
   docDesc.textContent = doc.description;
 }
 
@@ -178,9 +179,8 @@ function normalizeHeading(text) {
   const finalText = stripped || "Section";
   const emojiPart = emojiMatch.join(" ");
   if (emojiPart) return `${finalText} ${emojiPart}`;
-  // If top-level doc has a known emoji, append it to subsections lacking one
-  const topDocEmoji = docEmojis[activeDoc.id] || "🔹";
-  return `${finalText} ${topDocEmoji}`;
+  const topDocEmoji = docEmojis[activeDoc.id];
+  return topDocEmoji ? `${finalText} ${topDocEmoji}` : finalText;
 }
 
 function stripEmojis(text) {
