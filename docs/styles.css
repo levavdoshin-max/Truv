@@ -235,19 +235,19 @@ button {
   grid-template-columns: 1fr 1fr;
   gap: 20px;
   margin-top: 20px;
-  align-items: start;
+  align-items: stretch;
 }
 
 .category-card {
   border: 1px solid rgba(221, 228, 240, 0.7);
   border-radius: 18px;
-  padding: 16px;
-  background: linear-gradient(145deg, rgba(255, 255, 255, 0.85), rgba(240, 245, 255, 0.82));
+  padding: 12px;
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.9), rgba(242, 247, 255, 0.85));
   box-shadow: 0 24px 60px rgba(12, 23, 45, 0.12);
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  min-height: 0;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 10px;
+  min-height: 240px;
   height: 100%;
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
@@ -273,8 +273,8 @@ button {
 .category-docs {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 10px;
-  margin-top: 4px;
+  gap: 8px;
+  margin-top: 0;
 }
 
 .quick-links {
@@ -301,9 +301,9 @@ button {
 }
 
 .doc-card {
-  padding: 14px 16px;
-  border-radius: 14px;
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.94), rgba(242, 246, 255, 0.9));
+  padding: 12px 14px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(244, 248, 255, 0.9));
   border: 1px solid rgba(223, 230, 243, 0.9);
   cursor: pointer;
   transition: border-color 0.12s ease, transform 0.08s ease, background 0.2s ease;
