@@ -47,6 +47,34 @@ const docs = [
   },
 ];
 
+const docsMap = docs.reduce((acc, doc) => {
+  acc[doc.id] = doc;
+  return acc;
+}, {});
+
+const categories = [
+  {
+    id: "overview-block",
+    title: "Overview",
+    description: "Start here for the map of all brand docs.",
+    docs: ["overview"],
+    featured: true,
+    quickLinks: ["brand", "positioning", "messaging", "personas", "seo"],
+  },
+  {
+    id: "brand-story",
+    title: "Brand & Story",
+    description: "Essence, positioning, and how we speak.",
+    docs: ["brand", "positioning", "messaging"],
+  },
+  {
+    id: "audience-growth",
+    title: "Audience & Growth",
+    description: "People we speak to and how they discover us.",
+    docs: ["personas", "seo"],
+  },
+];
+
 const docList = document.getElementById("doc-list");
 const docRoot = document.getElementById("doc-root");
 const docTitle = document.getElementById("doc-title");
@@ -63,18 +91,52 @@ let activeTopId;
 function renderDocList() {
   docList.innerHTML = "";
 
-  docs.forEach((doc) => {
-    const card = document.createElement("div");
-    card.className = `doc-card${doc.id === activeDoc.id ? " active" : ""}`;
-    card.dataset.docId = doc.id;
-
-    card.innerHTML = `
+  const makeDocButton = (docId) => {
+    const doc = docsMap[docId];
+    if (!doc) return null;
+    const button = document.createElement("button");
+    button.className = `doc-card${doc.id === activeDoc.id ? " active" : ""}`;
+    button.dataset.docId = doc.id;
+    button.innerHTML = `
       <p class="title">${doc.title}</p>
       <p class="desc">${doc.description}</p>
       <span class="badge">${doc.badge}</span>
     `;
+    button.addEventListener("click", () => loadDoc(doc.id));
+    return button;
+  };
 
-    card.addEventListener("click", () => loadDoc(doc.id));
+  categories.forEach((cat) => {
+    const card = document.createElement("div");
+    card.className = `category-card${cat.featured ? " featured" : ""}`;
+    card.innerHTML = `
+      <div class="category-header">
+        <h3>${cat.title}</h3>
+        <p>${cat.description}</p>
+      </div>
+      <div class="category-docs"></div>
+      ${cat.featured && cat.quickLinks ? '<div class="quick-links"></div>' : ""}
+    `;
+
+    const docsContainer = card.querySelector(".category-docs");
+    cat.docs.forEach((docId) => {
+      const btn = makeDocButton(docId);
+      if (btn) docsContainer.appendChild(btn);
+    });
+
+    if (cat.featured && cat.quickLinks) {
+      const quick = card.querySelector(".quick-links");
+      cat.quickLinks.forEach((docId) => {
+        const doc = docsMap[docId];
+        if (!doc) return;
+        const chip = document.createElement("button");
+        chip.className = "doc-chip";
+        chip.textContent = doc.title;
+        chip.addEventListener("click", () => loadDoc(doc.id));
+        quick.appendChild(chip);
+      });
+    }
+
     docList.appendChild(card);
   });
 }

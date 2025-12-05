@@ -10,7 +10,7 @@
     href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap"
     rel="stylesheet"
   />
-  <link rel="stylesheet" href="./styles.css?v=truv4" />
+  <link rel="stylesheet" href="./styles.css?v=truv5" />
 </head>
 <body>
   <div class="bg-glow bg-glow-1"></div>
@@ -18,11 +18,15 @@
   <div class="bg-glow bg-glow-3"></div>
   <div class="page">
     <header class="hero">
+      <div class="logo-row">
+        <img src="./logo.svg" alt="myTruv" class="brand-mark" />
+        <div class="brand-word">myTruv</div>
+      </div>
       <div class="eyebrow">Brand Source of Truth</div>
       <div class="hero-top">
         <h1>myTruv Brand System</h1>
         <div class="hero-actions">
-          <span class="chip muted">Live Markdown → HTML</span>
+          <span class="label-soft">Live Markdown → HTML</span>
         </div>
       </div>
       <p class="lede">
@@ -42,9 +46,9 @@
             <p class="eyebrow">Docs</p>
             <h2>Everything in one calm view</h2>
           </div>
-          <p class="note">Pick a doc to render the latest Markdown.</p>
+          <p class="note">Start with Overview, then jump into the topics you need.</p>
         </div>
-        <div class="doc-list" id="doc-list"></div>
+        <div class="doc-grid" id="doc-list"></div>
       </div>
 
       <main class="panel content">
@@ -70,6 +74,6 @@
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-  <script type="module" src="./app.js?v=truv4"></script>
+  <script type="module" src="./app.js?v=truv5"></script>
 </body>
 </html>
