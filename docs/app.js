@@ -1,9 +1,7 @@
 import { marked } from "https://cdn.jsdelivr.net/npm/marked@12.0.2/lib/marked.esm.js";
 
-const repo = "levavdoshin-max/Truv-Lev-Tests";
-const branch = "main";
-const cdnBase = `https://cdn.jsdelivr.net/gh/${repo}@${branch}`;
-const rawBase = `https://raw.githubusercontent.com/${repo}/${branch}`;
+// Load Markdown from same-origin files on the deployed site to avoid cross-origin/CDN issues
+const rawBase = ".";
 
 const docs = [
   {
@@ -324,15 +322,10 @@ async function loadDoc(docId, opts = {}) {
 
   setLoading("Loading the latest Markdown…");
   const cacheBust = opts.cacheBust ? `?t=${Date.now()}` : "";
-  const cdnUrl = `${cdnBase}/${doc.file}${cacheBust}`;
-  const rawUrl = `${rawBase}/${doc.file}${cacheBust}`;
+  const localUrl = `${rawBase}/${doc.file}${cacheBust}`;
 
   try {
-    let response = await fetch(cdnUrl);
-    if (!response.ok) {
-      // fallback to raw.githubusercontent if CDN fails
-      response = await fetch(rawUrl);
-    }
+    const response = await fetch(localUrl);
     if (!response.ok) throw new Error(`Fetch error ${response.status}`);
 
     const markdown = await response.text();
@@ -343,7 +336,7 @@ async function loadDoc(docId, opts = {}) {
     docRoot.innerHTML = `
       <div class="error">
         <strong>Could not load ${doc.title}.</strong><br />
-        ${error.message}. Try a hard refresh or open it on GitHub.
+        ${error.message}. The markdown files should be available locally on this site.
       </div>
     `;
   }
