@@ -358,10 +358,27 @@ heroButtons.forEach((button) => {
   button.addEventListener("click", () => {
     const target = button.dataset.doc;
     if (target) {
-      loadDoc(target);
+      loadDoc(target).then(() => {
+        window.scrollTo({ top: document.querySelector(".content")?.offsetTop || 0, behavior: "smooth" });
+      });
     }
   });
 });
 
 renderDocList();
 loadDoc(activeDoc.id);
+
+// Back to top
+const backToTop = document.getElementById("back-to-top");
+if (backToTop) {
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 360) {
+      backToTop.classList.add("visible");
+    } else {
+      backToTop.classList.remove("visible");
+    }
+  });
+  backToTop.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+}
