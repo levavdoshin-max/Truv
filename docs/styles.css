@@ -226,8 +226,8 @@ button {
 
 .doc-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 14px;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 16px;
   margin-top: 14px;
 }
 
@@ -238,7 +238,7 @@ button {
   background: #fff;
   display: grid;
   gap: 12px;
-  min-height: 200px;
+  min-height: 220px;
 }
 
 .category-card.featured {
@@ -259,9 +259,9 @@ button {
 }
 
 .category-docs {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
 }
 
 .quick-links {
@@ -288,14 +288,14 @@ button {
 }
 
 .doc-card {
-  padding: 12px 14px;
+  padding: 16px 14px;
   border-radius: 12px;
   background: #fff;
   border: 1px solid #dfe6f3;
   cursor: pointer;
   transition: border-color 0.12s ease, transform 0.08s ease, background 0.2s ease;
   flex: 1 1 100%;
-}
+  }
 
 .doc-card:hover {
   border-color: #2c64e3;
