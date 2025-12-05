@@ -442,7 +442,7 @@ button {
 .flow-row {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
   flex-wrap: wrap;
   margin: 8px 0 6px;
 }
@@ -469,9 +469,14 @@ button {
 }
 
 .flow-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-weight: 800;
   color: #1f4cd7;
-  font-size: 18px;
+  font-size: 20px;
+  line-height: 1;
+  transform: translateY(-2px);
 }
 
 .sr-only {
