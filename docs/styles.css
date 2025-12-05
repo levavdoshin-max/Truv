@@ -56,24 +56,6 @@ body {
   -webkit-backdrop-filter: blur(12px);
 }
 
-.logo-row {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin-bottom: 6px;
-}
-
-.brand-mark {
-  width: 42px;
-  height: 42px;
-}
-
-.brand-word {
-  font-size: 18px;
-  font-weight: 700;
-  letter-spacing: -0.02em;
-}
-
 .hero-top {
   display: flex;
   align-items: flex-start;
@@ -117,12 +99,6 @@ h2 {
   font-size: 14px;
 }
 
-.hero-actions {
-  display: flex;
-  gap: 8px;
-  align-items: center;
-}
-
 .chip {
   display: inline-flex;
   align-items: center;
@@ -147,18 +123,6 @@ h2 {
   color: var(--muted);
   background: #f5f7fb;
   border-color: #e7ecf7;
-}
-
-.label-soft {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  padding: 6px 10px;
-  border-radius: 10px;
-  background: rgba(15, 23, 42, 0.06);
-  color: #0f172a;
-  font-weight: 600;
-  font-size: 13px;
 }
 
 .hero-buttons {
