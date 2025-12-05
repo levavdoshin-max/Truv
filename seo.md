@@ -674,3 +674,70 @@ Every piece should:
 4. End with a **gentle CTA**, e.g.:
 
    > “If you’re tired of budgeting apps but still want to know you’re okay, myTruv might be the next thing to try.”
+
+---
+
+## 5. Data model spec (ontology + SEO mapping)
+
+**Purpose:** define entities, relationships, and how each SEO keyword (or page) references the ontology.
+
+### 5.1 High-level structure
+
+- Global ontology: `fi_type`, `fi_subtype`, `recommended_action_type`.
+- Optional dimensions: `income_level`, `risk_level`.
+- Mapping layer: `keyword_mapping` links each keyword/page to the ontology.
+
+### 5.2 Entities and relationships
+
+**fi_type** (top-level categories)  
+- id (string PK), name, description?, timestamps.
+
+**fi_subtype** (leaf patterns, primary semantic atom)  
+- id (string PK), fi_type_id (FK), name, description?, timestamps.  
+- Relationship: `fi_type` 1→N `fi_subtype`.
+
+**recommended_action_type** (normalized actions)  
+- id (string PK), name, description?, timestamps.  
+- Optionally add `fi_subtype_action` (M:N) if you want to predefine allowed actions per subtype.
+
+**income_level** (enum)  
+- LOW_INCOME, MID_INCOME, HIGH_INCOME, LT_30K, 30K_60K, 60K_100K, GT_100K.
+
+**risk_level** (enum)  
+- LOW, MEDIUM, HIGH, CRITICAL.
+
+### 5.3 SEO / keyword mapping layer
+
+`keyword_mapping` (or `seo_keyword_insight`) fields:  
+- id (PK), keyword, page_slug/url?, fi_type_id (FK), fi_subtype_id (FK), recommended_action_id (FK), income_level (enum, nullable), risk_level (enum), timestamps.  
+- Indexes: keyword, fi_subtype_id, fi_type_id.
+
+Model options for actions:  
+- Simple: each keyword gets one recommended action (no direct subtype→action link).  
+- Rich: add `fi_subtype_action` table for valid action sets per subtype.
+
+### 5.4 Relationship diagram (text)
+
+```
+fi_type (1) ────────┐
+                    │
+                    └─── (N) fi_subtype
+
+fi_subtype (1) ──────────── (N) keyword_mapping
+fi_type    (1) ──────────── (N) keyword_mapping  (denormalized convenience)
+
+recommended_action_type (1) ─── (N) keyword_mapping
+
+keyword_mapping:
+  keyword / fi_type_id / fi_subtype_id / recommended_action_id / income_level / risk_level
+
+Optional:
+fi_subtype (M) ───── fi_subtype_action ───── (M) recommended_action_type
+```
+
+### 5.5 How this meets “global ontology → SEO subset”
+
+1) Ontology tables: `fi_type`, `fi_subtype`, `recommended_action_type`, enums `income_level`, `risk_level`.  
+2) SEO subset: rows in `keyword_mapping` referencing those IDs (1,300+ keywords).  
+3) Each keyword is a row inside the ontology, not the definition of it.  
+4) Sheet mapping aligns: keyword → FI Type → FI Subtype → Income → Risk → Recommended Action.
